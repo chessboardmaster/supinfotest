@@ -18,7 +18,7 @@ public class MainActivity extends Activity {
 	private static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 100;
 	public static final int MEDIA_TYPE_IMAGE = 1;
 	public static final int MEDIA_TYPE_VIDEO = 2;
-
+	// commentaire test pour git
 
 	private Uri fileUri;
 
@@ -73,6 +73,11 @@ private static File getOutputMediaFile(int type){
     String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
     File mediaFile;
     if (type == MEDIA_TYPE_IMAGE){
+
+    	private Uri fileUri;
+
+        @Override
+        protected void onCreate(Bundle save
         mediaFile = new File(mediaStorageDir.getPath() + File.separator +
         "IMG_"+ timeStamp + ".jpg");
     } else if(type == MEDIA_TYPE_VIDEO) {
